@@ -1,0 +1,88 @@
+.categories{
+    height:100%;
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    max-width: 80%;
+    margin: auto;
+}
+.categories-intro{
+    height:30vh;
+    max-width: 80%;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.category{
+    max-width: 80%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px;
+    color:black;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: fantasy;
+}
+.products{
+    max-width:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.product{
+   margin:5px;
+    margin-top: 100px;
+}
+
+.product img{
+    width: 450px;
+    height: 550px;
+}
+.product-page{
+    display: flex;
+    flex-direction: row;
+}
+.product-description{
+    padding:20px;
+}
+.description-title{
+    font-size:30px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+.description-price{
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom:100px;
+}
+.btn-wrap{
+    width: 250px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-wrap a{
+    color:white;
+}
+.menu-history a{
+    color:black;
+    font-size:20px;
+}
+
