@@ -1,0 +1,23 @@
+{% extends "Shop/base.html" %}
+{% block content %}
+    <div class="menu-history">
+        <a href={% url 'page_categories' %}>Вернуться к категориям → </a>
+        <a href={% url 'index' product.category_name.id %}> {{ product.category_name }} </a>
+    </div>
+    <h1 class="category-title">{{ product.category_name }}</h1>
+    <div class="product-page">
+        <div class="product-gallery">
+            {% for img in imgs.all %}
+                <img src={{ img.src.url }}>
+            {% endfor %}
+        </div>
+        <div class="product-description">
+            <p class="description-title">{{ product }}</p>
+            <p class="description-descr">{{ product.description }}</p>
+            <p class="description-price">{{ product.price }} ₽</p>
+            <div class="btn-wrap">
+                <a class="btn" href="#">Купить</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
